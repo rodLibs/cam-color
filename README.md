@@ -94,7 +94,6 @@ repositories {
         cam.createCamera();
     }
 </code></pre>
-</br>
 
 
 #### .xml
@@ -104,7 +103,7 @@ repositories {
       android:layout_width="match_parent"
       android:layout_height="match_parent" />
 ```
-</br>
+
 
 #### Permission - Manifest
 ```xml
