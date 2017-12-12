@@ -61,7 +61,7 @@ repositories {
  CamPickerColor cam = new CamPickerColor(MainActivity.this,frameLayout);
 </code></pre>
 
-###### Listener
+###### Listener that will return the hexadecimal or RGB of the color captured by the camera. 
 
 <pre><code>
  cam.setListener(new ColorListener() {
@@ -79,15 +79,36 @@ repositories {
             }
         });
 </code></pre>
+
+###### Release and resume camera.
+<pre><code>
+  @Override
+    protected void onPause() {
+        super.onPause();
+        cam.destroyCamera();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        cam.createCamera();
+    }
+</code></pre>
 </br>
 
 
 #### .xml
 ```xml
-   <FrameLayout
-       android:id="@+id/camera_preview"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent" />
+  <FrameLayout
+      android:id="@+id/camera_preview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+```
+</br>
+
+#### Permission - Manifest
+```xml
+  <uses-permission android:name="android.permission.CAMERA"/>
 ```
 </br>
 </br>
