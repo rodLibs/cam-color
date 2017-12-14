@@ -27,8 +27,9 @@ The Gradle dependency is available via maven. maven is the default Maven reposit
 ## Add repository
 <pre><code>
 repositories {
-   
-   
+    maven {
+        url  "https://dl.bintray.com/rod120/cam-color" 
+    }
 }
 </code></pre>
 
@@ -38,16 +39,17 @@ repositories {
 
 #### Gradle:
 <pre><code>
-
-
+  compile 'com.github.rodlibs:cam-color:1.0'
 </code></pre>
 
 
 #### Maven:
 ```xml
  <dependency>
-  
-  
+   <groupId>com.github.rodlibs</groupId>
+   <artifactId>cam-color</artifactId>
+   <version>1.0</version>
+   <type>pom</type>
 </dependency>
 ```
 </br>
