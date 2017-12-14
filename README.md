@@ -83,15 +83,15 @@ repositories {
 ###### Release and resume camera.
 <pre><code>
   @Override
-    protected void onPause() {
-        super.onPause();
-        cam.destroyCamera();
-    }
-
-    @Override
     protected void onResume() {
         super.onResume();
         cam.createCamera();
+    }
+  
+  @Override
+    protected void onPause() {
+        super.onPause();
+        cam.destroyCamera();
     }
 </code></pre>
 
