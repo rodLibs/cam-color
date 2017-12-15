@@ -1,4 +1,4 @@
-<img src="zoom.gif" height="550" width="430">
+<img src="camcolor.gif" height="500" width="400">
 
 # Cam-Color
 This library allows you to obtain the hexadecimal or RGB code of the color of any image through the camera. 
@@ -7,7 +7,7 @@ You can switch between the rear or front camera.
 </br>
 
 # Sample Project
-You can download the latest sample APK from this repo here: https://linkAqui
+You can download the latest sample APK from this repo here: https://github.com/rodLibs/cam-color/blob/master/sample/cam%20color.apk
 </br>
 </br>
 
