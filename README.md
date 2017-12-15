@@ -116,7 +116,7 @@ repositories {
 
 # Api Methods
  <pre><code>
-  createCamera();  -->> create camera and setar in frame layout.
+  createCamera();  -->> create camera and set in frame layout.
 </code></pre>
 
 <pre><code>
@@ -132,7 +132,7 @@ repositories {
 </code></pre>
 
 <pre><code>
-  pause();   -->>  Pause the camera, gongelando the image and the color values.
+  pause();   -->>  Pause the camera, freezing the image and the color values.
 </code></pre>
 
 <pre><code>
