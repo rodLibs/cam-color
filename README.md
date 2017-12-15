@@ -1,4 +1,4 @@
-<img src="camcolor.gif" height="500" width="400">
+<img src="camcolor.gif" height="500" width="380">
 
 # Cam-Color
 This library allows you to obtain the hexadecimal or RGB code of the color of any image through the camera. 
@@ -56,7 +56,7 @@ repositories {
 </br>
 
 
-# Simple usage
+# Sample usage
 #### .java
 <pre><code>
  FrameLayout frameLayout = (FrameLayout)findViewById(R.id.camera_preview);
@@ -112,7 +112,38 @@ repositories {
   <uses-permission android:name="android.permission.CAMERA"/>
 ```
 </br>
+
+
+# Api Methods
+ <pre><code>
+  createCamera();  -->> create camera and setar in frame layout.
+</code></pre>
+
+<pre><code>
+  destroyCamera();  -->> destroy and release camera.
+</code></pre>
+
+<pre><code>
+  setCameraBack();  -->> switch to rear camera.
+</code></pre>
+
+<pre><code>
+  setCameraFront();  -->> switch to front camera.
+</code></pre>
+
+<pre><code>
+  pause();   -->>  Pause the camera, gongelando the image and the color values.
+</code></pre>
+
+<pre><code>
+   resume(); -->>  resumes the camera, releasing the image and color values.
+</code></pre>
 </br>
+
+
+
+
+
 
 
 
