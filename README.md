@@ -136,7 +136,7 @@ repositories {
 </code></pre>
 
 <pre><code>
-   resume(); -->>  resumes the camera, releasing the image and color values.
+  resume(); -->>  resumes the camera, releasing the image and color values.
 </code></pre>
 </br>
 
