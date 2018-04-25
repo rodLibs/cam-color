@@ -98,6 +98,41 @@ repositories {
 </code></pre>
 
 
+#### .kt
+<pre><code>
+  var frameLayout = findViewById<FrameLayout>(R.id.camera_preview)
+  var cam = CamPickerColor(this@MainActivity, frameLayout)
+</code></pre>
+
+###### Listener that will return the hexadecimal or RGB of the color captured by the camera. 
+<pre><code>
+  cam.setListener(object : ColorListener {
+            override fun getColorHexadec(s: String) {
+                //returns the color hexadecimal.
+            }
+            override fun getColorRGB(r: Int, g: Int, b: Int) {
+                //returns the color RGB.
+            }
+            override fun getColor(i: Int) {
+                //returns the color code int.
+            }
+        })
+</code></pre>
+
+###### Release and resume camera.
+<pre><code>
+   override fun onResume() {
+        super.onResume()
+        cam.createCamera()
+    }
+    override fun onPause() {
+        super.onPause()
+        cam.destroyCamera()
+    }
+</code></pre>
+
+
+
 #### .xml
 ```xml
   <FrameLayout
