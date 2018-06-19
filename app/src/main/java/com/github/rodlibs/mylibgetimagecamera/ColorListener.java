@@ -1,7 +1,7 @@
 package com.github.rodlibs.mylibgetimagecamera;
 
 /**
- * Created by rodrigo on 07/12/17.
+ * Created by rodd on 07/12/17.
  */
 
 public interface ColorListener {

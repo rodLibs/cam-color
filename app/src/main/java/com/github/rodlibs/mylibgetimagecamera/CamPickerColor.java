@@ -12,7 +12,7 @@ import android.widget.FrameLayout;
 import android.widget.Toast;
 
 /**
- * Created by rodrigo on 07/12/17.
+ * Created by rodd on 07/12/17.
  */
 
 public class CamPickerColor implements Camera.PreviewCallback,SurfaceHolder.Callback {
