@@ -39,7 +39,7 @@ repositories {
 
 #### Gradle:
 <pre><code>
-  compile 'com.github.rodlibs:cam-color:1.0'
+  compile 'com.github.rodlibs:cam-color:1.2'
 </code></pre>
 
 
@@ -48,7 +48,7 @@ repositories {
  <dependency>
    <groupId>com.github.rodlibs</groupId>
    <artifactId>cam-color</artifactId>
-   <version>1.0</version>
+   <version>1.2</version>
    <type>pom</type>
 </dependency>
 ```
@@ -98,6 +98,41 @@ repositories {
 </code></pre>
 
 
+#### .kt
+<pre><code>
+  var frameLayout = findViewById<FrameLayout>(R.id.camera_preview)
+  var cam = CamPickerColor(this@MainActivity, frameLayout)
+</code></pre>
+
+###### Listener that will return the hexadecimal or RGB of the color captured by the camera. 
+<pre><code>
+  cam.setListener(object : ColorListener {
+            override fun getColorHexadec(s: String) {
+                //returns the color hexadecimal.
+            }
+            override fun getColorRGB(r: Int, g: Int, b: Int) {
+                //returns the color RGB.
+            }
+            override fun getColor(i: Int) {
+                //returns the color code int.
+            }
+        })
+</code></pre>
+
+###### Release and resume camera.
+<pre><code>
+   override fun onResume() {
+        super.onResume()
+        cam.createCamera()
+    }
+    override fun onPause() {
+        super.onPause()
+        cam.destroyCamera()
+    }
+</code></pre>
+
+
+
 #### .xml
 ```xml
   <FrameLayout
@@ -116,7 +151,7 @@ repositories {
 
 # Api Methods
  <pre><code>
-  createCamera();  -->> create camera and setar in frame layout.
+  createCamera();  -->> create camera and set in frame layout.
 </code></pre>
 
 <pre><code>
@@ -132,7 +167,7 @@ repositories {
 </code></pre>
 
 <pre><code>
-  pause();   -->>  Pause the camera, gongelando the image and the color values.
+  pause();   -->>  Pause the camera, freezing the image and the color values.
 </code></pre>
 
 <pre><code>
