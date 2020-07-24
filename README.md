@@ -39,7 +39,7 @@ repositories {
 
 #### Gradle:
 <pre><code>
-  compile 'com.github.rodlibs:cam-color:1.2'
+  implementation 'com.github.rodlibs:cam-color:2.0'
 </code></pre>
 
 
@@ -48,7 +48,7 @@ repositories {
  <dependency>
    <groupId>com.github.rodlibs</groupId>
    <artifactId>cam-color</artifactId>
-   <version>1.2</version>
+   <version>2.0</version>
    <type>pom</type>
 </dependency>
 ```
@@ -146,6 +146,10 @@ repositories {
 ```xml
   <uses-permission android:name="android.permission.CAMERA"/>
 ```
+
+<pre><code>
+  OBS: Ask for camera permissions at runtime for android versions above api 23.
+</code></pre>
 </br>
 
 
@@ -174,8 +178,6 @@ repositories {
   resume(); -->>  resumes the camera, releasing the image and color values.
 </code></pre>
 </br>
-
-
 
 
 
