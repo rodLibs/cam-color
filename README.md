@@ -13,7 +13,7 @@ You can download the latest sample APK from this repo here: https://github.com/r
 
 
 # Requirements
-cam-color requires at minimum Android 2.3.3 (API level 10).
+cam-color requires at minimum Android 4.0 (API level 14).
 </br>
 </br>
 
@@ -39,7 +39,7 @@ repositories {
 
 #### Gradle:
 <pre><code>
-  implementation 'com.github.rodlibs:cam-color:2.0'
+  implementation 'com.github.rodlibs:cam-color:2.1'
 </code></pre>
 
 
@@ -48,7 +48,7 @@ repositories {
  <dependency>
    <groupId>com.github.rodlibs</groupId>
    <artifactId>cam-color</artifactId>
-   <version>2.0</version>
+   <version>2.1</version>
    <type>pom</type>
 </dependency>
 ```
