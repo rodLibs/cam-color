@@ -1,5 +1,6 @@
 package com.github.rodlibs.mylibgetimagecamera;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.hardware.Camera;
 import android.util.Log;
@@ -7,6 +8,7 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
 
+@SuppressLint("ViewConstructor")
 public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback{
     private SurfaceHolder mHolder;
     private Camera mCamera;

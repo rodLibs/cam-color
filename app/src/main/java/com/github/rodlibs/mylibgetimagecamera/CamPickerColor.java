@@ -21,7 +21,7 @@ public class CamPickerColor implements Camera.PreviewCallback,SurfaceHolder.Call
     private CameraPreview mPreview;
     private static boolean isFront = false;
     private Context context;
-    public ColorListener colorListener;
+    private ColorListener colorListener;
     private FrameLayout frameLayout;
 
 
@@ -104,10 +104,6 @@ public class CamPickerColor implements Camera.PreviewCallback,SurfaceHolder.Call
         }
         return rgb;
     }
-
-
-
-
 
 
 
@@ -211,9 +207,6 @@ public class CamPickerColor implements Camera.PreviewCallback,SurfaceHolder.Call
     }
 
 
-
-
-
     @Override
     public void surfaceCreated(SurfaceHolder holder) {}
     @Override
@@ -221,7 +214,6 @@ public class CamPickerColor implements Camera.PreviewCallback,SurfaceHolder.Call
         try {
             mCamera.setPreviewCallback(this);
             mCamera.startPreview();
-
         } catch (Exception ex) {}
     }
 
