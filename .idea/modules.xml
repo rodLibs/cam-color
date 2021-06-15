@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MyLibGetImageCamera.iml" filepath="$PROJECT_DIR$/MyLibGetImageCamera.iml" group="MyLibGetImageCamera" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="MyLibGetImageCamera/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cam-color.iml" filepath="$PROJECT_DIR$/.idea/modules/cam-color.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/cam-color.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/cam-color.app.iml" />
     </modules>
   </component>
 </project>
